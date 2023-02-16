@@ -48,5 +48,7 @@ Defining and creating new routes is rather straight forward. Simple to pass alon
 - Phoenix is a templating engine
 
 ### **Plugs**
+Plugs are similar to middleware in other languages. The main difference seems to be that Phoenix is bundling both the request and response into a single object, *Plug.Conn*.
 
 #### Notes
+- [Link to documentation for Plugs](https://hexdocs.pm/plug/Plug.Conn.html)
