@@ -24,12 +24,13 @@ At least until I get a good enough understanding of the CICD requirements to int
 ## Phoenix - [Guided Steps](https://hexdocs.pm/phoenix/up_and_running.html)
 
 ### **Setup**
-Using a community built devcontainer with VS Code made this rather easy. There are some complaints from ElixirLS that the version of Elixir (1.12) is not compatible with OTP 24. We will have to look at either updating what we have or looking for a newer image. Also a compiler warning that :settext is not needed any more. Tried the easy way of just removing the lines advised, but that prompted a whole page of errors requiring the missing module. I had to do a rollback in the end and just let it be.
+Using a community built devcontainer with VS Code made this rather easy. There are some complaints from ElixirLS that the version of Elixir (1.12) is not compatible with OTP 24. We will have to look at either updating what we have or looking for a newer image. Also a compiler warning that :settext is not needed any more. ~~Tried the easy way of just removing the lines advised, but that prompted a whole page of errors requiring the missing module. I had to do a rollback in the end and just let it be.~~ After a second attempt this worked for some reason. I probably misstyped it the first time around.
 
 #### Notes
 - We have to spin up the database separately. Easily achieved by using docker with a compose file.
 - We have to spin up the database separately. Easily achieved by using docker with a compose file.
 - Remember to forward the ports in the devcontainer.json
+- If you get warnings from the compiler about unnecessary inclusion of :settext just remove the single element promted for
 
 ### **Creating an Application**
 Simple couple of commands and example page is up and rolling. It does comes with it's own dashboard for monitoring the internals of the application out of the box, by default only enabled in development mode. The Phoenix Framework follows the Model-View-Controller pattern all three contained within the lib folder. A detailed breakdown is [here](https://hexdocs.pm/phoenix/directory_structure.html).
