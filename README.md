@@ -55,3 +55,8 @@ Plugs are similar to middleware in other languages. The main difference seems to
 - Composability of plug transformation seems to allow for easier logical constructs.
 - [Link to documentation for Plugs](https://hexdocs.pm/plug/Plug.Conn.html)
 - [Link to Plug Project](https://hexdocs.pm/plug/1.13.6/Plug.html)
+
+### **Routing**
+[TODO](https://hexdocs.pm/phoenix/routing.html)
+
+#### Notes
