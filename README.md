@@ -9,6 +9,7 @@
   - [Creating an Application](#creating-an-application)
   - [Routes](#routes)
   - [Plugs](#plugs)
+  - [Routing](#routing)
 - [Useful Links](#useful-links)
 
 ## This Repository
@@ -60,9 +61,20 @@ Plugs are similar to middleware in other languages. The main difference seems to
 - [Link to Plug Project](https://hexdocs.pm/plug/1.13.6/Plug.html)
 
 ### **Routing**
-[TODO](https://hexdocs.pm/phoenix/routing.html)
+The router uses macros for HTTP verbs along with a set of others. The macro Resources looks interesting, it expands to a set of routes for a 'RESTful' endpoint. I am presuming it is not to difficult to define your own macros.
+Phoenix dynamically generates a set of path helper functions for referencing correct paths in our templates.
+For collections of plugs one want to run for the different endpoints Phoenix provides a facade, or pipeline. The pipe_through keyword accepts a list of plugs.
 
 #### Notes
+- ```$ mix phx.routes``` Outputs all the routes for the application
+- [Link to documentation for macro resources](https://hexdocs.pm/phoenix/Phoenix.Router.html#resources/4)
+- The resources macro accepts by passing in ```:only``` or ```:show``` a s options
+- When nesting routes with scopes, ensure that you do not have any path duplication
+
+#### Asides
+Something I am noting here is the lack of IntelliSense code completion for certain things, macros seems to lack atleast some awareness.<br>
+[Repo to the 'official' Elixir Language Server.](https://github.com/elixir-lsp/elixir-ls)<br>
+*Macros - A reminder*: A macro is a language keyword the preprocessor will expand into a larger set of instructions.
 
 ## Useful Links
 - [**Tool: Code Analysis for Elixir**](https://github.com/rrrene/credo)
