@@ -32,6 +32,7 @@ Out of the box the compiler printed a warning ```...:settext is not needed any m
 #### Notes
 - We have to spin up the database separately. Easily achieved by using docker with a compose file.
 - Remember to forward the ports in the devcontainer.json
+- Bumping to Elixir 1.14.3, Phoenix 1.6.16 and Node 19 fixes ElixirLS warnings, and no issues srufaced immediately.
 
 ### **Creating an Application**
 Simple couple of commands and example page is up and rolling. It does comes with it's own dashboard for monitoring the internals of the application out of the box, by default only enabled in development mode. The Phoenix Framework follows the Model-View-Controller pattern all three contained within the lib folder. A detailed breakdown is [here](https://hexdocs.pm/phoenix/directory_structure.html).
