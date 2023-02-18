@@ -94,3 +94,6 @@ The documentation for the ```use``` macro recommends using ```import``` instead,
 - [**Tool: Code Analysis for Elixir**](https://github.com/rrrene/credo)
 - [Summary of web project requirements](https://elixirforum.com/t/is-learning-only-elixir-enough-as-a-backend-developer-to-develop-any-project/44100/14)
 - [Curated list of Elixir and Erlang libs, resources ++](https://github.com/h4cc/awesome-elixir)
+
+
+## [NEXT - Redirects](https://hexdocs.pm/phoenix/controllers.html#redirection)
