@@ -10,6 +10,7 @@
   - [Routes](#routes)
   - [Plugs](#plugs)
   - [Routing](#routing)
+  - [Controllers](#controllers)
 - [Useful Links](#useful-links)
 
 ## This Repository
@@ -75,6 +76,19 @@ For collections of plugs one want to run for the different endpoints Phoenix pro
 Something I am noting here is the lack of IntelliSense code completion for certain things, macros seems to lack atleast some awareness.<br>
 [Repo to the 'official' Elixir Language Server.](https://github.com/elixir-lsp/elixir-ls)<br>
 *Macros - A reminder*: A macro is a language keyword the preprocessor will expand into a larger set of instructions.
+
+### **Controllers**
+Phoenix comes with the basic function for responding we want ```text/2, html/2, json/2``` in addition to its own function for rendering templates ```render/3```. Returning different files by checking for query parameters is quite simple.
+
+#### Notes
+- For the ```render/3``` function to work correctly the controller **and** the veiw must share the same root name.
+- Mind the file ending for non HTML view files, *\*.eex* **not** *\*.heex*.
+ [Forum post.](https://elixirforum.com/t/why-does-phoenix-1-6-use-html-heex-as-the-suffix-of-the-template-file/42013)
+- [Docs for MIME types](https://hexdocs.pm/mime/2.0.2/MIME.html)
+- [Docs for Status Codes mapped to atoms](https://hexdocs.pm/plug/1.13.6/Plug.Conn.Status.html#code/1)
+
+#### Asides
+The documentation for the ```use``` macro recommends using ```import``` instead, when possible. The guide uses **use**. I do need to read up on how Elixir handles modules. 
 
 ## Useful Links
 - [**Tool: Code Analysis for Elixir**](https://github.com/rrrene/credo)
