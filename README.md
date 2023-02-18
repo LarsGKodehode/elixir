@@ -68,7 +68,7 @@ For collections of plugs one want to run for the different endpoints Phoenix pro
 #### Notes
 - ```$ mix phx.routes``` Outputs all the routes for the application
 - [Link to documentation for macro resources](https://hexdocs.pm/phoenix/Phoenix.Router.html#resources/4)
-- The resources macro accepts by passing in ```:only``` or ```:show``` a s options
+- The resources macro accepts by passing in ```:only``` or ```:show``` as options
 - When nesting routes with scopes, ensure that you do not have any path duplication
 
 #### Asides
