@@ -9,6 +9,7 @@
   - [Creating an Application](#creating-an-application)
   - [Routes](#routes)
   - [Plugs](#plugs)
+- [Useful Links](#useful-links)
 
 ## This Repository
 
@@ -62,3 +63,8 @@ Plugs are similar to middleware in other languages. The main difference seems to
 [TODO](https://hexdocs.pm/phoenix/routing.html)
 
 #### Notes
+
+## Useful Links
+- [**Tool: Code Analysis for Elixir**](https://github.com/rrrene/credo)
+- [Summary of web project requirements](https://elixirforum.com/t/is-learning-only-elixir-enough-as-a-backend-developer-to-develop-any-project/44100/14)
+- [Curated list of Elixir and Erlang libs, resources ++](https://github.com/h4cc/awesome-elixir)
